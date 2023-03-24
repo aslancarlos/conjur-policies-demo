@@ -1,7 +1,7 @@
 # conjur policy load root authn/authn-azure.yml
 
 - !policy
-  id: conjur/authn-azure/nube2
+  id: conjur/authn-azure/nube1
   annotations:
     azure: true
   body:
