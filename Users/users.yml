@@ -1,0 +1,5 @@
+- !user
+  id: pipeline
+  annotations:
+    teste: true
+    cyberark: true

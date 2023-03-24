@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps { 
-                sh 'docker ps -a' 
+                sh 'conjur policy load -b root -f Users/users.yml'
             }
         }
         stage('Test'){
