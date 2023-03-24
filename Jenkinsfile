@@ -1,19 +1,22 @@
-pipeline {
-    agent any
+pipeline { 
+    agent any 
+    options {
+        skipStagesAfterUnstable()
+    }
     stages {
-        stage('Build') {
-            steps {
-                //
+        stage('Build') { 
+            steps { 
+                sh 'docker ps -a' 
             }
         }
-        stage('Test') {
+        stage('Test'){
             steps {
-                //
+                sh 'docker ps -a'
             }
         }
         stage('Deploy') {
             steps {
-                //
+                sh 'docker ps -a'
             }
         }
     }
