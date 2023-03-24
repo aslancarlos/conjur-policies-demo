@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps { 
-                sh 'conjur -i policy load -b root -f Users/users.yml'
+                sh 'conjur -i policy load -b root -f authn/authn-azure-nube1.yml'
             }
         }
         stage('Test'){
