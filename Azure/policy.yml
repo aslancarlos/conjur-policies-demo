@@ -1,0 +1,22 @@
+- !policy
+  id: app-nube1
+  body:
+    - !group
+
+    - &hosts
+      - !host
+        id: azurecompute-1
+        annotations:
+          authn-azure/subscription-id: 46add3e2-3976-4315-a129-51beb6f07659
+          authn-azure/resource-group: demo-bcochile_group
+
+          # authn-azure/user-assigned-identity: <user-assigned managed identity>
+          # authn-azure/system-assigned-identity: <Object ID>
+
+    - !grant
+      role: !group
+      members: *hosts
+
+- !grant
+  role: !group /conjur/authn-azure/nube1/apps
+  member: !group app-nube1
