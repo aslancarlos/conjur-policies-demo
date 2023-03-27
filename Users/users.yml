@@ -3,3 +3,10 @@
   annotations:
     teste: true
     cyberark: true
+    
+   
+- !user
+  id: brunozani
+  annotations:
+    teste: true
+    cyberark: true
