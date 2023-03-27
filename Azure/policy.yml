@@ -17,5 +17,5 @@
       members: *hosts
 
 - !grant
-  role: !group /conjur/authn-azure/nube1/apps
+  role: !group conjur/authn-azure/nube1/apps
   member: !group app-nube1
