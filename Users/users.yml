@@ -10,3 +10,10 @@
   annotations:
     teste: true
     cyberark: true
+    
+    
+- !user
+  id: seb
+  annotations:
+    teste: true
+    cyberark: true
