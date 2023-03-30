@@ -14,9 +14,9 @@ pipeline {
                 sh 'conjur -i policy load  -b root -f Azure/policy.yml'
             }
         }
-        stage('Deploy') {
+        stage('Users') {
             steps {
-                sh 'docker ps -a'
+                sh 'conjur -i policy load  -b root -f Users/users.yml'
             }
         }
     }
