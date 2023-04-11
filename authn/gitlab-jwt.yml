@@ -11,8 +11,5 @@
             authn-jwt/gitlab1/ref: master
             authn-jwt/gitlab1/project_path: aslan_carlos/conjur-jwt
           
-           
-    - !grant
-      role: !group authn-jwt/gitlab1/apps
-      members: !host aslan_carlos
+          
      
