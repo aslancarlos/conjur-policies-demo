@@ -4,19 +4,9 @@ pipeline {
         skipStagesAfterUnstable()
     }
     stages {
-        stage('Build') { 
-            steps { 
-                sh 'conjur -i policy load -b root -f authn/authn-azure-nube1.yml'
-            }
-        }
-        stage('Azure'){
+        stage('Gitlab-jwt') {
             steps {
-                sh 'conjur -i policy load  -b root -f Azure/policy.yml'
-            }
-        }
-        stage('Users') {
-            steps {
-                sh 'conjur -i policy load  -b root -f Users/users.yml'
+                sh 'conjur -i policy load  -b root -f authn/gitlab-jwt.yml'
             }
         }
     }
