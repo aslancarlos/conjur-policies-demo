@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Gitlab-jwt') {
             steps {
-                sh 'conjur -i policy load  -b apps/gitlab-projects -f authn/gitlab-jwt.yml'
+                sh 'conjur -i policy load  -b apps -f authn/gitlab-jwt.yml'
             }
         }
     }

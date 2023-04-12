@@ -1,5 +1,5 @@
 - !host
-     id: aslan_carlos
+     id: gitlab-projects/aslan_carlos
      annotations:
          authn-jwt/gitlab1/project_id: 45083893
          authn-jwt/gitlab1/ref: master
