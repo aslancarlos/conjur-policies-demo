@@ -4,6 +4,12 @@
          authn-jwt/gitlab1/project_id: 45083893
          authn-jwt/gitlab1/ref: master
          authn-jwt/gitlab1/project_path: aslan_carlos/conjur-jwt
+
+
+- !group
+    id: apps/authenticators
+    annotations:
+      editable: true
           
           
      
