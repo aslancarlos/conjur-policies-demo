@@ -1,15 +1,9 @@
-- !policy
-  id: gitlab-apps
-  body:
-    - !group
- 
-    - &hosts
-      - !host
-        id: aslan_carlos
-        annotations:
-            authn-jwt/gitlab1/project_id: 45083893
-            authn-jwt/gitlab1/ref: master
-            authn-jwt/gitlab1/project_path: aslan_carlos/conjur-jwt
+- !host
+     id: aslan_carlos
+     annotations:
+         authn-jwt/gitlab1/project_id: 45083893
+         authn-jwt/gitlab1/ref: master
+         authn-jwt/gitlab1/project_path: aslan_carlos/conjur-jwt
           
           
      
