@@ -6,8 +6,13 @@
          authn-jwt/gitlab1/project_path: aslan_carlos/conjur-jwt
 
 
+- !host
+  id: authenticators
+  annotations:
+    editable: true
+
 - !grant
-  role: !group apps/authenticators
+  role: !group authenticators
   members:
     - !host gitlab-projects/aslan_carlos
 
